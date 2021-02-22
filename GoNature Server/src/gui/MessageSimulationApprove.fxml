@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="400.0" style="-fx-background-color: linear-gradient(to bottom, #ccff66 0%, #ffffcc 100%);" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.MessageApprove">
+   <children>
+      <Label layoutX="130.0" layoutY="17.0" prefHeight="26.0" prefWidth="137.0" text="Message simulation">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="emailLabel" alignment="TOP_LEFT" layoutX="110.0" layoutY="47.0" text="Sent to:" />
+      <Label fx:id="dateTxt" layoutX="215.0" layoutY="217.0" prefHeight="17.0" prefWidth="165.0" text="Label" />
+      <Label fx:id="phoneTxt" layoutX="155.0" layoutY="67.0" prefHeight="17.0" prefWidth="128.0" />
+      <Label alignment="TOP_LEFT" layoutX="110.0" layoutY="217.0" prefHeight="17.0" prefWidth="97.0" text="Date and hour:" />
+      <Label fx:id="phoneLabel" alignment="TOP_LEFT" layoutX="110.0" layoutY="67.0" prefHeight="17.0" prefWidth="48.0" text="Sent to:" visible="false" />
+      <Label fx:id="emailTxt" layoutX="155.0" layoutY="47.0" prefHeight="17.0" prefWidth="204.0" text="Label" />
+      <Text fx:id="headTxt2" layoutX="81.0" layoutY="148.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You must confirm the order within an hour, otherwise it will be canceled." wrappingWidth="255.51947021484375">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Label alignment="TOP_LEFT" layoutX="110.0" layoutY="257.0" prefHeight="17.0" prefWidth="112.0" text="Number of visitors:" />
+      <Label fx:id="numberTxt" layoutX="215.0" layoutY="257.0" prefHeight="17.0" prefWidth="165.0" text="Label" />
+      <Label fx:id="parkTxt" layoutX="215.0" layoutY="237.0" prefHeight="17.0" prefWidth="165.0" text="Label" />
+      <Label alignment="TOP_LEFT" layoutX="110.0" layoutY="237.0" prefHeight="17.0" prefWidth="97.0" text="Park:" />
+      <Button id="Btn" fx:id="approveBtn" layoutX="99.0" layoutY="313.0" mnemonicParsing="false" onAction="#approveOrder" text="Approve">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button id="Btn" fx:id="cancelBtn" layoutX="219.0" layoutY="313.0" mnemonicParsing="false" onAction="#cancelOrder" prefHeight="37.0" prefWidth="82.0" text="Cancel" textFill="RED">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Label fx:id="idTxt" layoutX="215.0" layoutY="197.0" prefHeight="17.0" prefWidth="165.0" text="Label" />
+      <Label alignment="TOP_LEFT" layoutX="110.0" layoutY="197.0" prefHeight="17.0" prefWidth="82.0" text="Visitor ID:" />
+      <Label fx:id="orderLbl" alignment="CENTER_RIGHT" layoutX="110.0" layoutY="177.0" text="Order ID:" />
+      <Label fx:id="orderIdTxt" layoutX="215.0" layoutY="177.0" prefHeight="17.0" prefWidth="152.0" text="orderIdTxt" />
+      <Text fx:id="headTxt1" layoutX="81.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You were the next on the waiting list and your order can now be placed." wrappingWidth="255.51947021484375" />
+   </children>
+</Pane>
