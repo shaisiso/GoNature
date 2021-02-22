@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="401.0" prefWidth="403.0" style="-fx-background-color: linear-gradient(to bottom, #ccff66 0%, #ffffcc 100%);" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.MessageOrder">
+   <children>
+      <Label layoutX="135.0" layoutY="26.0" prefHeight="26.0" prefWidth="137.0" text="Message simulation">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="119.0" layoutY="142.0" text="Order ID:" />
+      <Label alignment="TOP_LEFT" layoutX="119.0" layoutY="162.0" prefHeight="17.0" prefWidth="97.0" text="Date:" />
+      <Label alignment="TOP_LEFT" layoutX="119.0" layoutY="202.0" prefHeight="17.0" prefWidth="108.0" text="Number of visitors:" />
+      <Label fx:id="emailTxt" layoutX="120.0" layoutY="51.0" prefHeight="17.0" prefWidth="213.0" text="Sent to:" />
+      <Label alignment="TOP_LEFT" layoutX="119.0" layoutY="182.0" prefHeight="17.0" prefWidth="97.0" text="Hour:" />
+      <Label alignment="TOP_LEFT" layoutX="119.0" layoutY="222.0" prefHeight="17.0" prefWidth="108.0" text="Park:" />
+      <Label fx:id="phoneTxt" layoutX="120.0" layoutY="74.0" prefHeight="17.0" prefWidth="213.0" />
+      <Text fx:id="orderIdTxt" layoutX="227.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="153.47003173828125" />
+      <Text fx:id="dateTxt" layoutX="227.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="136.99999822676182" />
+      <Text fx:id="timeTxt" layoutX="227.0" layoutY="195.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="108.00000024586916" />
+      <Text fx:id="visitorsTxt" layoutX="227.0" layoutY="215.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="108.00000024586916" />
+      <Text fx:id="parkTxt" layoutX="227.0" layoutY="235.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="108.00000024586916" />
+      <Text fx:id="text2" layoutX="140.0" layoutY="316.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Waiting to see you :)" wrappingWidth="279.47003173828125" />
+      <Label alignment="TOP_LEFT" layoutX="119.0" layoutY="242.0" prefHeight="17.0" prefWidth="108.0" text="Visitor ID:" />
+      <Text fx:id="visitorIDtxt" layoutX="227.0" layoutY="255.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="108.00000024586916" />
+      <Text fx:id="text1" layoutX="115.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="187.47003430055656">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+   </children>
+</Pane>

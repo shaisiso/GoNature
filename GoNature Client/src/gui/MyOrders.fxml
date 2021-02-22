@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: linear-gradient(to bottom, #ccff66 0%, #ffffcc 100%);" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.MyOrders">
+   <children>
+      <Label fx:id="hiTxt" layoutX="34.0" layoutY="59.0" prefHeight="32.0" prefWidth="99.0" text="Hi 'visitor name'" />
+      <ComboBox fx:id="cBox" layoutX="250.0" layoutY="173.0" onAction="#dates" prefWidth="150.0" promptText="Choose date" />
+      <Label layoutX="175.0" layoutY="250.0" prefHeight="17.0" prefWidth="32.0" text="Park:" />
+      <Label layoutX="175.0" layoutY="220.0" prefHeight="17.0" prefWidth="51.0" text="Order ID:" />
+      <Label layoutX="175.0" layoutY="280.0" text="Hour:" />
+      <Label layoutX="175.0" layoutY="310.0" text="Number of visitors:" />
+      <Label layoutX="175.0" layoutY="340.0" text="Email:" />
+      <Button id="Btn" fx:id="cancelBtn" layoutX="239.0" layoutY="432.0" mnemonicParsing="false" onAction="#cancelOrder" text="Cancel order" textFill="RED">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Text layoutX="294.0" layoutY="148.0" strokeType="OUTSIDE" strokeWidth="0.0" text="My orders" wrappingWidth="71.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Button id="Btn" fx:id="infoBtn" layoutX="24.0" layoutY="17.0" mnemonicParsing="false" onAction="#infoPage" prefHeight="25.0" prefWidth="53.0" text="Info" />
+      <Button id="Btn" fx:id="aboutBtn" layoutX="78.0" layoutY="17.0" mnemonicParsing="false" onAction="#aboutPage" prefHeight="25.0" prefWidth="53.0" text="about" />
+      <ImageView fitHeight="150.0" fitWidth="300.0" layoutX="183.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/images/logo.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="returnBtn" layoutX="34.0" layoutY="541.0" mnemonicParsing="false" onAction="#goBack" prefHeight="27.0" prefWidth="44.0">
+         <graphic>
+            <ImageView fx:id="returnImg" fitHeight="39.0" fitWidth="35.0" onMouseClicked="#goBack" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@/images/return.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Label layoutX="175.0" layoutY="370.0" text="Cost:" />
+      <Text fx:id="orderTxt" layoutX="299.0" layoutY="233.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="138.13671875" />
+      <Text fx:id="parkTxt" layoutX="299.0" layoutY="263.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="138.13671875" />
+      <Text fx:id="hourTxt" layoutX="299.0" layoutY="293.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="138.13671875" />
+      <Text fx:id="numberTxt" layoutX="299.0" layoutY="323.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="138.13671875" />
+      <Text fx:id="emailTxt" layoutX="299.0" layoutY="353.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="138.13671875" />
+      <Text fx:id="costTxt" layoutX="299.0" layoutY="383.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="138.13671875" />
+      <Text fx:id="organizedCost" layoutX="175.0" layoutY="409.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="322.13671875" />
+   </children>
+</Pane>

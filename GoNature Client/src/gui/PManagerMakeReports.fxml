@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="600.0" minWidth="-Infinity" prefHeight="0.0" prefWidth="600.0" style="-fx-background-color: linear-gradient(to bottom, #ccff66 0%, #ffffcc 100%);" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.PManagerReports">
+   <children>
+      <Button id="Btn" fx:id="generateBtn" layoutX="250.0" layoutY="452.0" mnemonicParsing="false" onAction="#generate" text="Generate report" />
+      <Text layoutX="247.0" layoutY="222.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose report" underline="true" wrappingWidth="130.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="297.0" layoutY="375.0" strokeType="OUTSIDE" strokeWidth="0.0" text="/" wrappingWidth="1.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <TextField fx:id="Mtxt" layoutX="248.0" layoutY="357.0" prefHeight="25.0" prefWidth="45.0" text="07" />
+      <TextField fx:id="Ytxt" layoutX="308.0" layoutY="357.0" prefHeight="25.0" prefWidth="45.0" text="2020" />
+      <Text layoutX="264.0" layoutY="349.0" strokeType="OUTSIDE" strokeWidth="0.0" text="M" wrappingWidth="15.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="325.0" layoutY="349.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Y" wrappingWidth="52.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="276.0" layoutY="185.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Reports" wrappingWidth="57.75">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="parkNameTxt" layoutX="272.0" layoutY="148.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Park 'name'" wrappingWidth="88.75">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Button id="Btn" fx:id="infoBtn" layoutX="14.0" layoutY="7.0" mnemonicParsing="false" onAction="#infoPage" prefHeight="25.0" prefWidth="53.0" text="Info" />
+      <Button id="Btn" fx:id="aboutBtn" layoutX="68.0" layoutY="7.0" mnemonicParsing="false" onAction="#aboutPage" prefHeight="25.0" prefWidth="53.0" text="about" />
+      <Button fx:id="returnBtn" layoutX="24.0" layoutY="531.0" mnemonicParsing="false" onAction="#goBack" prefHeight="27.0" prefWidth="44.0">
+         <graphic>
+            <ImageView fx:id="returnImg" fitHeight="39.0" fitWidth="35.0" onMouseClicked="#goBack" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@/images/return.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <ImageView fitHeight="150.0" fitWidth="300.0" layoutX="173.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/images/logo.png" />
+         </image>
+      </ImageView>
+      <RadioButton fx:id="visitorsBtn" layoutX="249.0" layoutY="242.0" mnemonicParsing="false" text="Number of visitors" />
+      <RadioButton fx:id="capacityBtn" layoutX="249.0" layoutY="272.0" mnemonicParsing="false" text="Capacity report" />
+      <RadioButton fx:id="incomBtn" layoutX="249.0" layoutY="302.0" mnemonicParsing="false" text="Income report" />
+   </children>
+</AnchorPane>

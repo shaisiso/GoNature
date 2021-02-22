@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: linear-gradient(to bottom, #ccff66 0%, #ffffcc 100%);" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.VisitorPage">
+   <children>
+      <ImageView fitHeight="332.0" fitWidth="348.0" layoutX="147.0" layoutY="294.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/images/home.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="nameTxt" disable="true" layoutX="250.0" layoutY="193.0" prefHeight="30.0" prefWidth="146.0" text="Frank Lampard">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <Text fx:id="nameLbl" layoutX="175.0" layoutY="214.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Full name">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fx:id="helloTxt" layoutX="276.0" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hello " wrappingWidth="145.6041259765625">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Button id="Btn" fx:id="newOrderBtn" layoutX="212.0" layoutY="155.0" mnemonicParsing="false" onAction="#newOrder" prefHeight="19.0" prefWidth="100.0" text="New order">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button id="Btn" fx:id="myOrdersBtn" layoutX="315.0" layoutY="155.0" mnemonicParsing="false" onAction="#myOrders" prefHeight="19.0" prefWidth="100.0" text="My orders">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <TextField fx:id="phoneTxt" disable="true" layoutX="250.0" layoutY="230.0" prefHeight="30.0" prefWidth="146.0" text="054-8888888">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <Text fx:id="phoneLbl" layoutX="175.0" layoutY="251.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <TextField fx:id="emailTxt" disable="true" layoutX="250.0" layoutY="268.0" prefWidth="146.0" text="F@g.com">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Text fx:id="emailLbl" layoutX="175.0" layoutY="289.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Button id="Btn" fx:id="infoBtn" layoutX="14.0" layoutY="7.0" mnemonicParsing="false" onAction="#infoPage" prefHeight="25.0" prefWidth="53.0" text="Info" />
+      <Button id="Btn" fx:id="aboutBtn" layoutX="68.0" layoutY="7.0" mnemonicParsing="false" onAction="#aboutPage" prefHeight="25.0" prefWidth="53.0" text="about" />
+      <ImageView fitHeight="150.0" fitWidth="300.0" layoutX="173.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/images/logo.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="returnBtn" layoutX="24.0" layoutY="531.0" mnemonicParsing="false" onAction="#goBack" prefHeight="27.0" prefWidth="44.0">
+         <graphic>
+            <ImageView fx:id="returnImg" fitHeight="39.0" fitWidth="35.0" onMouseClicked="#goBack" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@/images/return.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</Pane>

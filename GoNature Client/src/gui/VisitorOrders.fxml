@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: linear-gradient(to bottom, #ccff66 0%, #ffffcc 100%);" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.myOrders">
+   <children>
+      <Label layoutX="34.0" layoutY="59.0" prefHeight="32.0" prefWidth="99.0" text="Hi 'visitor name'" />
+      <ComboBox fx:id="cBox" layoutX="225.0" layoutY="172.0" prefWidth="150.0" />
+      <Label layoutX="189.0" layoutY="176.0" prefHeight="17.0" prefWidth="32.0" text="Park" />
+      <Label layoutX="189.0" layoutY="211.0" prefHeight="17.0" prefWidth="39.0" text="Date:" />
+      <Label layoutX="191.0" layoutY="238.0" text="Hour:" />
+      <Label fx:id="dateTxt" layoutX="243.0" layoutY="211.0" prefHeight="17.0" prefWidth="51.0" text="0/0/0" />
+      <Label fx:id="hourTxt" layoutX="241.0" layoutY="238.0" prefHeight="17.0" prefWidth="71.0" text="00:00" />
+      <Label layoutX="120.0" layoutY="270.0" text="Number of visitors:" />
+      <Label fx:id="visitorsTxt" layoutX="243.0" layoutY="271.0" prefHeight="17.0" prefWidth="58.0" text="#" />
+      <Label layoutX="189.0" layoutY="304.0" text="Email:" />
+      <Label fx:id="emailTxt" layoutX="243.0" layoutY="304.0" prefHeight="17.0" prefWidth="65.0" text="'email'" />
+      <Button id="Btn" fx:id="cancelBtn" layoutX="252.0" layoutY="347.0" mnemonicParsing="false" onAction="#cancelOrder" text="Cancel order" textFill="RED">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Text layoutX="270.0" layoutY="148.0" strokeType="OUTSIDE" strokeWidth="0.0" text="My orders" wrappingWidth="71.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Button id="Btn" fx:id="infoBtn" layoutX="24.0" layoutY="17.0" mnemonicParsing="false" onAction="#infoPage" prefHeight="25.0" prefWidth="53.0" text="Info" />
+      <Button id="Btn" fx:id="aboutBtn" layoutX="78.0" layoutY="17.0" mnemonicParsing="false" onAction="#aboutPage" prefHeight="25.0" prefWidth="53.0" text="about" />
+      <ImageView fitHeight="150.0" fitWidth="300.0" layoutX="183.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/images/logo.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="returnBtn" layoutX="34.0" layoutY="541.0" mnemonicParsing="false" onAction="#goBack" prefHeight="27.0" prefWidth="44.0">
+         <graphic>
+            <ImageView fx:id="returnImg" fitHeight="39.0" fitWidth="35.0" onMouseClicked="#goBack" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@/images/return.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</Pane>
