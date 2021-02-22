@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="600.0" minWidth="-Infinity" prefHeight="0.0" prefWidth="600.0" style="-fx-background-color: linear-gradient(to bottom, #ccff66 0%, #ffffcc 100%);" xmlns="http://javafx.com/javafx/8.0.251" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ServicePage">
+   <children>
+      <TextField fx:id="FnameTxt" layoutX="201.0" layoutY="200.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="LnameTxt" layoutX="201.0" layoutY="238.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Text layoutX="73.0" layoutY="258.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last name">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="phoneTxt" layoutX="201.0" layoutY="278.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Text layoutX="73.0" layoutY="298.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="emailTxt" layoutX="201.0" layoutY="318.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Text layoutX="73.0" layoutY="338.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="idTxt" layoutX="201.0" layoutY="358.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Text layoutX="73.0" layoutY="378.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="familyTxt" layoutX="201.0" layoutY="398.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="creditCardTxt" layoutX="201.0" layoutY="438.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Text fx:id="familyLbl" layoutX="73.0" layoutY="418.0" strokeType="OUTSIDE" strokeWidth="0.0" text="#Family members">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="73.0" layoutY="458.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Credit card">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fill="RED" layoutX="188.0" layoutY="247.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fill="RED" layoutX="188.0" layoutY="367.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fill="RED" layoutX="188.0" layoutY="327.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fill="RED" layoutX="188.0" layoutY="287.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="redLbl" fill="RED" layoutX="189.0" layoutY="407.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Button id="Btn" fx:id="submitBtn" layoutX="242.0" layoutY="486.0" mnemonicParsing="false" onAction="#register" text="Submit">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Text fx:id="finalSubNum" layoutX="126.0" layoutY="560.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="cBox" layoutX="73.0" layoutY="157.0" onAction="#hideFamilyFields" prefWidth="150.0" promptText="Membership card" />
+      <Text layoutX="270.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Registration" wrappingWidth="96.9375">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Button id="Btn" fx:id="infoBtn" layoutX="14.0" layoutY="7.0" mnemonicParsing="false" onAction="#infoPage" prefHeight="25.0" prefWidth="53.0" text="Info" />
+      <Button id="Btn" fx:id="aboutBtn" layoutX="68.0" layoutY="7.0" mnemonicParsing="false" onAction="#aboutPage" prefHeight="25.0" prefWidth="53.0" text="about" />
+      <Button fx:id="returnBtn" layoutX="24.0" layoutY="531.0" mnemonicParsing="false" onAction="#goBack" prefHeight="27.0" prefWidth="44.0">
+         <graphic>
+            <ImageView fx:id="returnImg" fitHeight="39.0" fitWidth="35.0" onMouseClicked="#goBack" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@/images/return.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <ImageView fitHeight="150.0" fitWidth="300.0" layoutX="173.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/images/logo.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="73.0" layoutY="220.0" strokeType="OUTSIDE" strokeWidth="0.0" text="First name">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fill="RED" layoutX="188.0" layoutY="209.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="207.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer service employee page" wrappingWidth="281.4700927734375">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Button id="Btn" fx:id="newRegistrationBtn" layoutX="446.0" layoutY="536.0" mnemonicParsing="false" onAction="#newRegistration" text="New registration" visible="false">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: linear-gradient(to bottom, #ccff66 0%, #ffffcc 100%);" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.OrderApproved">
+   <children>
+      <Text layoutX="217.0" layoutY="148.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your order is approved." wrappingWidth="145.9375">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="orderIDTxt" layoutX="219.0" layoutY="179.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Order ID: 88888888">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Button id="Btn" layoutX="243.0" layoutY="407.0" mnemonicParsing="false" onAction="#done" text="I'm done">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button id="Btn" fx:id="infoBtn" layoutX="14.0" layoutY="7.0" mnemonicParsing="false" onAction="#infoPage" prefHeight="25.0" prefWidth="53.0" text="Info" />
+      <Button id="Btn" fx:id="aboutBtn" layoutX="68.0" layoutY="7.0" mnemonicParsing="false" onAction="#aboutPage" prefHeight="25.0" prefWidth="53.0" text="about" />
+      <ImageView fitHeight="150.0" fitWidth="300.0" layoutX="173.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/images/logo.png" />
+         </image>
+      </ImageView>
+      <Label alignment="TOP_LEFT" layoutX="204.0" layoutY="204.0" prefHeight="17.0" prefWidth="97.0" text="Date and time:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="TOP_LEFT" layoutX="204.0" layoutY="246.0" prefHeight="20.0" prefWidth="122.0" text="Number of visitors:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="TOP_LEFT" layoutX="204.0" layoutY="225.0" prefHeight="17.0" prefWidth="97.0" text="Park:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Text fx:id="dateTxt" layoutX="334.0" layoutY="219.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="247.65368489921093">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="parkTxt" layoutX="333.0" layoutY="240.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="96.99999787844718">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="visitorsTxt" layoutX="333.0" layoutY="261.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="58.08985233306885">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Label alignment="TOP_LEFT" layoutX="202.0" layoutY="266.0" prefHeight="17.0" prefWidth="97.0" text="Total price:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Text fx:id="priceTxt" layoutX="333.0" layoutY="281.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="58.08985233306885">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="202.0" layoutY="371.0" strokeType="OUTSIDE" strokeWidth="0.0" text="To pay call: 1-700-707070" wrappingWidth="236.16489078849554" />
+      <Text fx:id="guideTxt" layoutX="100.0" layoutY="311.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You can get extra 12% discount for total price if you choose to pay in advance. Price for payment in advance:" visible="false" wrappingWidth="440.80340576171875" />
+      <Text fx:id="guidePriceTxt" layoutX="265.0" layoutY="329.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" visible="false" wrappingWidth="52.999985218048096">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+   </children>
+</Pane>

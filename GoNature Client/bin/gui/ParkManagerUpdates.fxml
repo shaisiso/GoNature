@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: linear-gradient(to bottom, #ccff66 0%, #ffffcc 100%);" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.PMUpdates">
+   <children>
+      <TextField fx:id="capacityTxt" layoutX="417.0" layoutY="199.0" prefHeight="25.0" prefWidth="99.0" />
+      <TextField fx:id="preOrderTxt" layoutX="417.0" layoutY="239.0" prefHeight="25.0" prefWidth="99.0" />
+      <TextField fx:id="visitTImeTxt" layoutX="417.0" layoutY="279.0" prefHeight="25.0" prefWidth="99.0" />
+      <TextField fx:id="discountTxt" layoutX="417.0" layoutY="319.0" prefHeight="25.0" prefWidth="99.0" />
+      <Text layoutX="270.0" layoutY="216.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Edit max capacity:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="270.0" layoutY="296.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Edit average visit time:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="270.0" layoutY="336.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Edit discount update:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="30.0" layoutY="216.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Current max capacity:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="capacityLbl" layoutX="179.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="550">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="30.0" layoutY="296.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Current average visit time:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="visitTimeLbl" layoutX="205.0" layoutY="297.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4 hours">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="30.0" layoutY="336.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Discounts:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="282.0" layoutY="153.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Updates" wrappingWidth="57.75">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="parkTxt" layoutX="262.0" layoutY="184.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Park 'name'" wrappingWidth="88.75">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Button id="Btn" fx:id="sendCapacity" layoutX="535.0" layoutY="199.0" mnemonicParsing="false" onAction="#updateCapacity" text="Send" />
+      <Accordion layoutY="95.0" />
+      <DatePicker fx:id="startDate" layoutX="328.0" layoutY="365.0" prefHeight="25.0" prefWidth="80.0" />
+      <Text layoutX="325.0" layoutY="361.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Discount start">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="433.0" layoutY="361.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Discount end">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <DatePicker fx:id="endDate" layoutX="436.0" layoutY="365.0" prefHeight="25.0" prefWidth="80.0" />
+      <Text layoutX="270.0" layoutY="256.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Edit max pre-order:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="30.0" layoutY="256.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Current max pre-order:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="preOrderLbl" layoutX="185.0" layoutY="257.0" strokeType="OUTSIDE" strokeWidth="0.0" text="400">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Button id="Btn" fx:id="infoBtn" layoutX="14.0" layoutY="7.0" mnemonicParsing="false" onAction="#infoPage" prefHeight="25.0" prefWidth="53.0" text="Info" />
+      <Button id="Btn" fx:id="aboutBtn" layoutX="68.0" layoutY="7.0" mnemonicParsing="false" onAction="#aboutPage" prefHeight="25.0" prefWidth="53.0" text="about" />
+      <Button fx:id="returnBtn" layoutX="24.0" layoutY="531.0" mnemonicParsing="false" onAction="#goBack" prefHeight="27.0" prefWidth="44.0">
+         <graphic>
+            <ImageView fx:id="returnImg" fitHeight="39.0" fitWidth="35.0" onMouseClicked="#goBack" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@/images/return.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <ImageView fitHeight="150.0" fitWidth="300.0" layoutX="173.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/images/logo.png" />
+         </image>
+      </ImageView>
+      <TextArea fx:id="approvedDiscount" layoutX="27.0" layoutY="344.0" prefHeight="150.0" prefWidth="240.0" />
+      <Button id="Btn" fx:id="sendPreOrder" layoutX="535.0" layoutY="238.0" mnemonicParsing="false" onAction="#updatePreOrder" text="Send" />
+      <Button id="Btn" fx:id="sendAvg" layoutX="535.0" layoutY="279.0" mnemonicParsing="false" onAction="#updateAvg" text="Send" />
+      <Button id="Btn" fx:id="sendDiscount" layoutX="535.0" layoutY="319.0" mnemonicParsing="false" onAction="#updateDiscount" text="Send" />
+      <Label layoutX="519.0" layoutY="322.0" prefHeight="19.0" prefWidth="23.0" text="\%" />
+   </children>
+</Pane>

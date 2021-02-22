@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="600.0" style="-fx-background-color: linear-gradient(to bottom, #ccff66 0%, #ffffcc 100%);" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.AboutPage">
+   <children>
+      <Text layoutX="294.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="About" wrappingWidth="145.9375">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="34.0" layoutY="159.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The founders of GoNature parks:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="35.0" layoutY="184.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Shahar Avital">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="143.0" layoutY="183.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Shai Siso">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="230.0" layoutY="183.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sean Friedman">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="357.0" layoutY="183.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Golan Yaakobov">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="480.0" layoutY="183.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Matan avraham">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="150.0" fitWidth="300.0" layoutX="173.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/images/logo.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="258.0" fitWidth="445.0" layoutX="90.0" layoutY="191.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/images/aboutpic.jpeg" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

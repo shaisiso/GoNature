@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="600.0" style="-fx-background-color: linear-gradient(to bottom, #ccff66 0%, #ffffcc 100%);" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.InfoPage">
+   <children>
+      <ComboBox fx:id="cBox" layoutX="14.0" layoutY="136.0" onAction="#parkSelect" prefWidth="150.0" promptText="Park" />
+      <Label layoutX="15.0" layoutY="163.0" prefHeight="25.0" prefWidth="68.0" text="Address:" underline="true">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <Label layoutX="95.0" layoutY="189.0" prefHeight="25.0" prefWidth="83.0" text="100₪">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <Text layoutX="272.0" layoutY="134.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Information" wrappingWidth="96.9375">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="adrressTxt" layoutX="95.0" layoutY="183.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="251.00000202655792">
+         <font>
+            <Font size="16.0" />
+         </font></Text>
+      <ImageView fitHeight="150.0" fitWidth="300.0" layoutX="173.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/images/logo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="15.0" layoutY="188.0" prefHeight="25.0" prefWidth="83.0" text="Base Price:" underline="true">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Text layoutX="59.0" layoutY="503.0" strokeType="OUTSIDE" strokeWidth="0.0" text="addtional park discounts:" underline="true" wrappingWidth="196.13671875">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <TextArea fx:id="parkDiscountTxt" layoutX="262.0" layoutY="482.0" prefHeight="39.0" prefWidth="265.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextArea>
+      <ImageView fitHeight="258.0" fitWidth="500.0" layoutX="48.0" layoutY="216.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/images/prices.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

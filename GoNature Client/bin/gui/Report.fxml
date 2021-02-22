@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="580.0" prefWidth="580.0" style="-fx-background-color: linear-gradient(to bottom, #ccff66 0%, #ffffcc 100%);" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.Report">
+   <children>
+      <Text fx:id="titleTxt" layoutX="190.0" layoutY="148.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="188.9375">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="150.0" fitWidth="300.0" layoutX="173.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/images/logo.png" />
+         </image>
+      </ImageView>
+      <PieChart fx:id="pieChart" layoutX="10.0" layoutY="161.0" prefHeight="413.0" prefWidth="564.0" title="Visitors report" visible="false" />
+      <TextArea fx:id="txt" layoutX="3.0" layoutY="218.0" prefHeight="357.0" prefWidth="564.0" visible="false" />
+      <Text fx:id="subTitleTxt" layoutX="47.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Those are the hours that the park was not in full capacity" visible="false">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <BarChart fx:id="incomeChart" layoutX="3.0" layoutY="133.0" prefHeight="445.0" prefWidth="580.0" title="Incomes report" visible="false">
+        <xAxis>
+          <CategoryAxis fx:id="barX" label="Type of visitors" side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis fx:id="barY" label="Income in ₪" side="LEFT" />
+        </yAxis>
+      </BarChart>
+   </children>
+</Pane>

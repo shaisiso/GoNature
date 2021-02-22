@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: linear-gradient(to bottom, #ccff66 0%, #ffffcc 100%);" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.DepManagerUpdates">
+   <children>
+      <Text layoutX="246.0" layoutY="148.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Update confirmations" wrappingWidth="159.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="65.0" layoutY="207.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose park in order to watch the submitted updates">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="cBox" layoutX="233.0" layoutY="218.0" onAction="#showUpdates" prefHeight="25.0" prefWidth="124.0" promptText="choose park" />
+      <Button id="Btn" fx:id="maxCapacityYes" layoutX="514.0" layoutY="248.0" mnemonicParsing="false" onAction="#approveCapacity" text="Yes" />
+      <Button id="Btn" fx:id="maxCapacityNo" layoutX="559.0" layoutY="248.0" mnemonicParsing="false" onAction="#declineCapacity" text="No" />
+      <Text fx:id="CurrentMaxCapacityLbl1" layoutX="40.0" layoutY="267.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Current max capacity:" visible="false">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="CurrentMaxCapacityLbl2" layoutX="189.0" layoutY="268.0" strokeType="OUTSIDE" strokeWidth="0.0" text="550" visible="false">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="CurrentAvgLbl1" layoutX="40.0" layoutY="347.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Current average visit time:" visible="false">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="CurrentAvgLbl2" layoutX="215.0" layoutY="348.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4 hours" visible="false">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="CurrentMaxPreOrderLbl1" layoutX="40.0" layoutY="307.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Current max pre-order:" visible="false">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="CurrentMaxPreOrderLbl2" layoutX="195.0" layoutY="308.0" strokeType="OUTSIDE" strokeWidth="0.0" text="400" visible="false">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="NewMaxCapacityLbl" layoutX="284.0" layoutY="267.0" strokeType="OUTSIDE" strokeWidth="0.0" text="New max capacity:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="NewMaxCapacityTxt" layoutX="433.0" layoutY="268.0" strokeType="OUTSIDE" strokeWidth="0.0" text="580">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="NewAvgLbl" layoutX="284.0" layoutY="347.0" strokeType="OUTSIDE" strokeWidth="0.0" text="New average visit time:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="NewAvgTxt" layoutX="443.0" layoutY="348.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4 hours">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="NewMaxPreOrderLbl" layoutX="284.0" layoutY="307.0" strokeType="OUTSIDE" strokeWidth="0.0" text="New max pre-order:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="NewMaxPreOrderTxt" layoutX="439.0" layoutY="308.0" strokeType="OUTSIDE" strokeWidth="0.0" text="420">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Button id="Btn" fx:id="maxPreOrderYes" layoutX="514.0" layoutY="289.0" mnemonicParsing="false" onAction="#approvePreOrder" text="Yes" />
+      <Button id="Btn" fx:id="maxPreOrderNo" layoutX="559.0" layoutY="289.0" mnemonicParsing="false" onAction="#declinePreOrder" text="No" />
+      <Button id="Btn" fx:id="avgYes" layoutX="514.0" layoutY="331.0" mnemonicParsing="false" onAction="#approveVisitTime" text="Yes" />
+      <Button id="Btn" fx:id="avgNo" layoutX="559.0" layoutY="331.0" mnemonicParsing="false" onAction="#declineVisitTime" text="No" />
+      <Button id="Btn" fx:id="infoBtn" layoutX="14.0" layoutY="7.0" mnemonicParsing="false" onAction="#infoPage" prefHeight="25.0" prefWidth="53.0" text="Info" />
+      <Button id="Btn" fx:id="aboutBtn" layoutX="68.0" layoutY="7.0" mnemonicParsing="false" onAction="#aboutPage" prefHeight="25.0" prefWidth="53.0" text="about" />
+      <Text fx:id="CurrentDiscountLbl" layoutX="40.0" layoutY="382.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Current discounts:" visible="false">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextArea fx:id="approvedDiscount" layoutX="37.0" layoutY="390.0" prefHeight="131.0" prefWidth="240.0" visible="false" />
+      <Text fx:id="newDisLbl" layoutX="284.0" layoutY="387.0" strokeType="OUTSIDE" strokeWidth="0.0" text="New discount:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="cBoxDis" layoutX="399.0" layoutY="370.0" onAction="#showDiscount" prefHeight="25.0" prefWidth="142.0" promptText="Choose discount" />
+      <Text fx:id="newDisDet" layoutX="311.0" layoutY="436.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="270.816162109375">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Button id="Btn" fx:id="disYes" layoutX="417.0" layoutY="452.0" mnemonicParsing="false" onAction="#approveDiscount" text="Yes" />
+      <Button id="Btn" fx:id="disNo" layoutX="462.0" layoutY="452.0" mnemonicParsing="false" onAction="#declineDiscount" text="No" />
+      <Button fx:id="returnBtn" layoutX="24.0" layoutY="531.0" mnemonicParsing="false" onAction="#goBack" prefHeight="27.0" prefWidth="44.0">
+         <graphic>
+            <ImageView fx:id="returnImg" fitHeight="39.0" fitWidth="35.0" onMouseClicked="#goBack" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@/images/return.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <ImageView fitHeight="150.0" fitWidth="300.0" layoutX="173.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/images/logo.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>
